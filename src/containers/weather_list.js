@@ -19,3 +19,9 @@ class WeatherList extends Component {
     )
   }
 }
+// {wheater} => wheater = state.wheater
+function mapStateToProps({ weather }){
+  return { weather }
+}
+
+export default connect(mapStateToProps)(WeatherList)
